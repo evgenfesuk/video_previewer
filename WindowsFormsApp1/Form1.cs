@@ -7,14 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using video_previewer.logic;
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        private static string fileName;
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fileName = Preview.SelectFile();
+            label1.Text = fileName.ToString();
         }
     }
 }

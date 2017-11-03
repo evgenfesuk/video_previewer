@@ -78,5 +78,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\video_previewer.logic\video_previewer.logic.csproj">
+      <Project>{5379a6c2-6d09-484a-b628-5fc1df5e7e42}</Project>
+      <Name>video_previewer.logic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
